@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/landing.css">
+    <link rel="stylesheet" href="static/text.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <script src="static/scripts/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-modal" id="modal">
+        <div class="modal-content">
+          <div class="modal-content-title">SIGNUP</div>
+          <div class="modal-content-row-container">
+            <input class="modal-input" id="username-input" type="text" autocomplete="off", spellcheck="false">
+            <div class="modal-content-subtitle">USERNAME</div>
+          </div>
+          <div class="modal-content-row-container">
+            <input class="modal-input" id="password-input" type="text" autocomplete="off", spellcheck="false">
+            <div class="modal-content-subtitle">PASSWORD</div>
+          </div>
+          <div class="modal-content-row-container" style="margin-bottom: 4vh;">
+            <button class="button" onclick="attemptSignup()" style="width: 8vw;">SIGNUP</button>
+          </div>
+          <div class="footer">Already have an account? <a class="footer-link" href="/login">Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
