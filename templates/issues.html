@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="static/issues.css">
+    <link rel="stylesheet" href="static/text.css">
+    <link rel="icon" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/just-sans?styles=145429">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <script src="static/scripts/index.js"></script>
+    <script>
+      window.onload = function() {loadupFunction()}
+    </script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="left-container">
+        <div class="icon"><img src="/static/assets/icon.png"></div>
+        <div class="title-container"><a style="color: #000000; text-decoration: none;" href="/">The Preservation Project</a></div>
+      </div>
+      <div class="right-container">
+        <a class="title-link" href="/chat">Chat</a>
+        <a class="title-link" href="/issues">Issues</a>
+        <a class="title-link" href="/">Home</a>
+        <div class="profile-container">
+          <img style="border-radius: 50%;" id="profilePicture">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-top">
+        <button class="issue-button" id="drought" onclick="window.location.href='/issues/drought'">
+          <div class="issue-button-title">DROUGHT</div>
+        </button>
+        <button class="issue-button" id="air" onclick="window.location.href='/issues/air-pollution'">
+          <div class="issue-button-title">AIR POLLUTION</div>
+        </button>
+        <button class="issue-button" id="wildfire" onclick="window.location.href='/issues/wildfires'">
+          <div class="issue-button-title">WILDFIRES</div>
+        </button>
+      </div>
+
+      <div class="content-bottom">
+        <button class="issue-button" id="ocean" onclick="window.location.href='/issues/ocean-pollution'">
+          <div class="issue-button-title">OCEAN POLLUTION</div>
+        </button>
+        <button class="issue-button" id="climate" onclick="window.location.href='/issues/climate-change'">
+          <div class="issue-button-title">CLIMATE CHANGE</div>
+        </button>
+        <button class="issue-button" id="habitat" onclick="window.location.href='/issues/habitat-destruction'">
+          <div class="issue-button-title">HABITAT DESTRUCTION</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
