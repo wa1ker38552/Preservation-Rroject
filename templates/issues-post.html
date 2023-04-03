@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="/static/text.css">
+    <link rel="stylesheet" href="/static/post.css">
+    <link rel="icon" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/just-sans?styles=145429">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <script src="/static/scripts/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.25/moment-timezone-with-data-10-year-range.js"></script>
+    <script>
+      window.onload = function() {
+        loadupFunction()
+        fetchPostData()
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="left-container">
+        <div class="icon"><img src="/static/assets/icon.png"></div>
+        <div class="title-container"><a style="color: #000000; text-decoration: none;" href="/">The Preservation Project</a></div>
+      </div>
+      <div class="right-container">
+        <div class="dropdown">
+          <a class="title-link" href="/chat">Chat</a>
+          <button class="dropbtn">Issues</button>
+          <div class="dropdown-content">
+            <a class="title-link-option" href="/issues/drought">Drought</a>
+            <a class="title-link-option" href="/issues/air-pollution">Air Pollution</a>
+            <a class="title-link-option" href="/issues/wildfires">Wildfires</a>
+            <a class="title-link-option" href="/issues/ocean-pollution">Ocean Pollution</a>
+            <a class="title-link-option" href="/issues/climate-change">Climate Change</a>
+            <a class="title-link-option" href="/issues/habitat-destruction">Habitat Destruction</a>
+          </div>
+        </div>
+        <a class="title-link" href="/">Home</a>
+        <div class="profile-container">
+          <img style="border-radius: 50%;" id="profilePicture">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="centered-content">
+        <div class="content-post-title" id="contentPostTitle"></div>
+        <a class="content-post-subtitle" id="contentPostSubtitle"></a>
+        <div class="content-post-timestamp" id="contentPostTimestamp"></div>
+        <pre class="content-post-content" id="contentPostContent"></pre>
+      </div>
+    </div>
+  </body>
+</html>
