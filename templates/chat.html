@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="static/chat.css">
+    <link rel="stylesheet" href="static/text.css">
+    <link rel="icon" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <script src="static/scripts/index.js"></script>
+    <script src="static/scripts/chat.js"></script>
+    <script>
+      window.onload = function() {
+        loadupFunction()
+        chatLoadup()
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="left-container">
+        <div class="icon"><img src="/static/assets/icon.png"></div>
+        <div class="title-container"><a style="color: #000000; text-decoration: none;" href="/">The Preservation Project</a></div>
+      </div>
+      <div class="right-container">
+        <a class="title-link" href="/chat">Chat</a>
+        <a class="title-link" href="/issues">Issues</a>
+        <a class="title-link" href="/">Home</a>
+        <div class="profile-container">
+          <img style="border-radius: 50%;" id="profilePicture">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="chat-content" id="chatContent">
+      </div>
+      <div class="chat-send-message">
+        <input class="chat-bar" id="chatInput" type="text" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </body>
+</html>
