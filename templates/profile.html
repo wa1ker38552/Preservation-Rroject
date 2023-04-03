@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="/static/profile.css">
+    <link rel="stylesheet" href="/static/text.css">
+    <link rel="icon" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/just-sans?styles=145429">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <script src="/static/scripts/index.js"></script>
+    <script src="/static/scripts/queryUser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.25/moment-timezone-with-data-10-year-range.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="left-container">
+        <div class="icon"><img src="/static/assets/icon.png"></div>
+        <div class="title-container"><a style="color: #000000; text-decoration: none;" href="/">The Preservation Project</a></div>
+      </div>
+      <div class="right-container">
+        <a class="title-link" href="/chat">Chat</a>
+        <a class="title-link" href="/issues">Issues</a>
+        <a class="title-link" href="/">Home</a>
+        <div class="profile-container">
+          <img style="border-radius: 50%;" id="profilePicture">
+        </div>
+      </div>
+    </div>
+    <div class="modal-background" id="bioModal" style="visibility: hidden;">
+      <div class="modal">
+        <input class="modal-input" type="text" id="bioText" placeholder="Bio", autocomplete="off" spellcheck="false">
+        <button class="button" onclick="changeBio()" style="margin-top: 1vh;">Save</button>
+        <button class="button" onclick="document.getElementById('bioModal').style.visibility = 'hidden'">Cancel</button>
+      </div>
+    </div>
+    <div class="modal-background" id="modal" style="visibility: hidden;">
+      <div class="modal">
+        <input class="modal-input" type="text" id="imageURL" placeholder="Image URL" autocomplete="off" spellcheck="false">
+        <button class="button" onclick="changeProfilePicture()" style="margin-top: 1vh;">Save</button>
+        <button class="button" onclick="document.getElementById('modal').style.visibility = 'hidden'">Cancel</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-profile-container">
+        <div class="profile-meta-container">
+          <div class="meta-container-profile">
+            <img style="border-radius: 50%; cursor: pointer;" id="metaProfilePicture">
+          </div>
+          <div class="meta-container-text" id="metaContainerText">
+            <div class="username-title" id="usernameTitle"></div>
+            <div class="bio-title" id="bioTitle"></div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="posts-title" id="postsTitle"></div>
+          <div class="posts-container-list" id="postsContainer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
