@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Preservation Project</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="/static/profile.css">
+    <link rel="stylesheet" href="/static/issues-landing.css">
+    <link rel="stylesheet" href="/static/text.css">
+    <link rel="icon" href="/static/assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/just-sans?styles=145429">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ogilen-personal-use">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/nova-flat-slim">
+    <script src="/static/scripts/index.js"></script>
+    <script src="/static/scripts/fetchIssue.js"></script>
+    <script src="/static/scripts/liveCounter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.25/moment-timezone-with-data-10-year-range.js"></script>
+  </head>
+  <body>
+    <script>
+      window.onload = function() {runOnload("{{type}}")}
+    </script>
+    <div class="modal-background" id="modal" style="visibility: hidden;">
+      <div class="modal">
+        <div class="create-modal-title">Create</div>
+        <input class="create-modal-input" id="postTitle" type="text" autocomplete="off" spellcheck="false" placeholder="Title">
+        <textarea class="create-modal-input modal-textarea" id="postDescription" type="text" autocomplete="off" spellcheck="false" placeholder="Write your post here..."></textarea>
+        <button class="button" style="margin-top: 1vh;" onclick="uploadPost('{{type}}')">Post</button>
+        <button class="button" style="margin-top: 1vh;" onclick="document.getElementById('modal').style.visibility = 'hidden'">Cancel</button>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="left-container">
+        <div class="icon"><img src="/static/assets/icon.png"></div>
+        <div class="title-container"><a style="color: #000000; text-decoration: none;" href="/">The Preservation Project</a></div>
+      </div>
+      <div class="center-container" id="center-content"></div>
+      <div class="right-container">
+        <a class="title-link" href="/chat">Chat</a>
+        <div class="dropdown">
+          <button class="dropbtn">Issues</button>
+          <div class="dropdown-content">
+            <a class="title-link-option" href="/issues/drought">Drought</a>
+            <a class="title-link-option" href="/issues/air-pollution">Air Pollution</a>
+            <a class="title-link-option" href="/issues/wildfires">Wildfires</a>
+            <a class="title-link-option" href="/issues/ocean-pollution">Ocean Pollution</a>
+            <a class="title-link-option" href="/issues/climate-change">Climate Change</a>
+            <a class="title-link-option" href="/issues/habitat-destruction">Habitat Destruction</a>
+          </div>
+        </div>
+        <a class="title-link" href="/">Home</a>
+        <div class="profile-container">
+          <img style="border-radius: 50%;" id="profilePicture">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div style="grid-row: 1;" id="counterContainer">
+          <div class="main-content-title">Live Counter</div>
+          <div class="main-content-counter"><span id="counterText"></span><span id="counterValue"></span></div>
+        </div>
+        <div style="grid-row: 2;">
+          <div class="main-content-title">Posts</div>
+          <div class="content-posts-container" id="contentPostsContainer">
+            
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="main-content-title">Latest News</div>
+        <div class="content-news-container" id="contentNewsContainer">
+        </div>
+      </div>
+      <div class="add-post-button" onclick="openModal()">+</div>
+    </div>
+  </body>
+</html>
