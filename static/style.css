@@ -1,0 +1,52 @@
+:root {
+  --main-bg-color: #94cb67;
+  --main-brd-color: #bababa;
+  --error-border-color: #fe3e3e;
+  --error-color: #fe6c6c;
+  --link: #7ab4ff;
+  --title-font: "Ogilen Personal Use";
+  --subtitle-font: "Rubik";
+}
+
+::-webkit-scrollbar {
+  width: 1vh;
+  height: 1vh;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.rounded-box {
+  border-style: solid;
+  border-radius: 1vh;
+}
+
+.button {
+  width: auto;
+  height: 5vh;
+  border-style: solid;
+  border-radius: 1.5vh;
+  background: #ffffff;
+  border-width: 1px;
+  border-color: var(--main-brd-color);
+  transition: background 0.3s ease-in-out;
+  font-size: 2.5vh;
+  padding: 1vh;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Rubik";
+}
+
+.button:hover {
+  background: var(--main-bg-color);
+  color: #ffffff;
+}
