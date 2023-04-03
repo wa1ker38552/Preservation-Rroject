@@ -1,0 +1,70 @@
+.content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.content-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+}
+
+.content-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+}
+
+.issue-button {
+  display: inline-block;
+  width: 25vw;
+  height: 30vh;
+  border-style: solid;
+  border-radius: 2vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 2px;
+  border-color: var(--main-brd-color);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 2vw;
+}
+
+#drought {
+  background: url("https://merriam-webster.com/assets/mw/images/article/art-wap-landing-mp-lg/alt-596f95fe451e7-3973-bd59d7fb3cfb37b5222f8fb68fea0ee5@1x.jpg");
+  background-size: cover;
+}
+
+#air {
+  background: url("https://www.conserve-energy-future.com/wp-content/uploads/2013/11/air-pollution-smoke-emission.jpg");
+  background-size: cover;
+}
+
+#wildfire {
+  background: url("https://s.hdnux.com/photos/01/21/51/67/21405124/7/1200x0.jpg");
+  background-size: cover;
+}
+
+#ocean {
+  background: url("https://www.fairplanet.org/wp-content/uploads/2019/07/ocean-pollution-plastic.1567434951.jpg");
+  background-size: cover;
+}
+
+#climate {
+  background: url("https://www.edf.org/sites/default/files/primary_images_hero_mobile/GettyImages-155141288-polar-bear-600x285-2.jpg");
+  background-size: cover;
+}
+
+#habitat {
+  background: url("https://www.brinknews.com/wp-content/uploads/2021/10/GettyImages-519852406.jpg");
+  background-size: cover;
+}
+
+.issue-button:hover {
+  box-shadow: var(--main-bg-color) 1vh 1vh;
+}
