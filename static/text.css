@@ -1,0 +1,155 @@
+.title{
+  font-family: var(--title-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-title {
+  font-family: var(--title-font);
+  font-size: 5vh;
+  padding: 4vh;
+  padding-bottom: 0;
+}
+
+.modal-content-subtitle {
+  font-family: var(--subtitle-font);
+  font-size: 3vh;
+  margin-top: 0.5vh;
+}
+
+.title-container {
+  display: inline-block;
+  font-family: "Ogilen Personal Use";
+  font-size: 3vh;
+}
+
+.content-title {
+  font-size: 10vh;
+  font-family: "Ogilen Personal Use";
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--main-bg-color);
+  text-decoration-thickness: 1.5vh;
+}
+
+.issue-button-title {
+  font-size: 6vh;
+  font-family: "Rubik";
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.username-title {
+  font-family: "Rubik";
+  font-size: 5vh;
+}
+
+.bio-title {
+  font-family: "Rubik";
+  font-size: 4vh;
+  font-style: italic;
+}
+
+.posts-title {
+  font-family: "Rubik";
+  font-size: 4vh;
+}
+
+.create-modal-title {
+  font-size: 4vh;
+  font-family: var(--title-font);
+}
+
+.post-title {
+  font-size: 3vh;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Rubik";
+}
+
+.post-title:hover {
+  font-weight: bold;
+  color: var(--main-bg-color);
+}
+
+.post-time {
+  font-size: 2vh;
+  font-family: "Rubik";
+}
+
+.main-content-title {
+  padding: 1vh;
+  font-size: 5vh;
+  font-family: "Ogilen Personal Use"
+}
+
+.content-post-title {
+  font-size: 7vh;
+  font-family: "Ogilen Personal Use";
+}
+
+.content-post-subtitle {
+  font-size: 4vh;
+  font-family: "Rubik";
+  color: #000000;
+  text-decoration: none;
+}
+
+.content-post-subtitle:hover {
+  color: var(--main-bg-color);
+}
+
+.content-post-timestamp {
+  font-size: 3.8vh;
+  font-family: "Rubik";
+}
+
+.content-post-content {
+  margin-top: 5vh;
+  font-size: 3.5vh;
+  font-family: "Rubik";
+  white-space: pre-wrap;
+}
+
+.news-title {
+  font-size: 4vh;
+  font-family: "Nova Flat Slim";
+  text-decoration: none;
+  color: #000000;
+}
+
+.news-title:hover {
+  color: var(--main-bg-color);
+}
+
+.news-blurb {
+  font-family: "Rubik";
+  font-size: 3.5vh;
+  word-wrap: break-word;
+}
+
+.center-container {
+  grid-column: 2;
+  text-align: center;
+  font-size: 4vh;
+  font-family: "Ogilen Personal Use"
+}
+
+.title-link-option {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-content-counter {
+  font-size: 5vh;
+  font-family: "Rubik";
+  padding: 1vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.counterText {
+  margin-right: 1vw;
+}
